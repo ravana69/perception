@@ -1,0 +1,213 @@
+﻿<html>
+<!-- Mirrored from x20xx.com/perception.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Nov 2022 06:23:07 GMT -->
+<head> 
+<!-- 9-2013 -->
+
+  <title>: Perception</title>  
+  
+  
+<style type="text/css">
+      html, body {  
+        margin: 0;
+        padding: 0;
+        height:100%;
+ color:#ffffff;background:#000000; 
+ overflow:hidden;
+ }
+*img[src$=".gif"], img[src$=".png"], img[src$=".jpg"] , img[src$=".bmp"] {
+                   image-rendering: -moz-crisp-edges;        
+                   image-rendering:   -o-crisp-edges;         
+                   image-rendering: -webkit-optimize-contrast;
+                   image-rendering: crisp-edges;
+                   -ms-interpolation-mode: nearest-neighbor;  
+                 }
+#ff
+{
+width:100px;
+height:100px;
+background:#ff0000; 
+position:absolute;
+
+}
+#gg
+{
+width:100px;
+height:100px;
+background:#ffff00; 
+position:absolute;
+}
+#hh
+{
+width:100px;
+height:100px;
+background:#ff00ff; 
+position:absolute;
+}
+#ii
+{
+width:100px;
+height:100px;
+background:#0000ff; 
+position:absolute;
+}
+#jj
+{
+width:100px;
+height:100px;
+background:#00ff00; 
+position:absolute;
+}
+#kk
+{
+width:100px;
+height:100px;
+background:#00ffff; 
+position:absolute;
+}
+</style>
+
+
+<script type="text/javascript">
+
+function setbackgroundff()
+{
+    window.setTimeout( "setbackgroundff()", 1); //  milliseconds delay
+
+ 
+ var colors = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+
+    var col = Math.floor(Math.random()*colors.length);
+document.getElementsByTagName("body")[0].style.backgroundColor = colors[col];
+
+var colorsff = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+    var colff = Math.floor(Math.random()*colorsff.length);
+
+document.getElementById("ff").style.backgroundColor = colorsff[colff];
+
+var colorsgg = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+    var colgg = Math.floor(Math.random()*colorsgg.length);
+
+document.getElementById("gg").style.backgroundColor = colorsgg[colgg];
+
+var colorshh = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+    var colhh = Math.floor(Math.random()*colorshh.length);
+
+document.getElementById("hh").style.backgroundColor = colorshh[colhh];
+
+
+var colorsii = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+    var colii = Math.floor(Math.random()*colorsii.length);
+
+document.getElementById("ii").style.backgroundColor = colorsii[colii];
+
+var colorsjj = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+    var coljj = Math.floor(Math.random()*colorsjj.length);
+
+document.getElementById("jj").style.backgroundColor = colorshh[coljj];
+
+var colorskk = ["111111","#222222","#333333", "#444444", "#555555", "#666666", "#777777","#888888","#999999","#AAAAAA","#BBBBBB","#CCCCCC","#DDDDDD","#EEEEEE","#FFFFFF", "#000000"]; 
+    var colkk = Math.floor(Math.random()*colorskk.length);
+
+document.getElementById("kk").style.backgroundColor = colorskk[colkk];
+
+}
+
+function setzindex()
+{
+    window.setTimeout( "setzindex()", 600*Math.random()); //  milliseconds delay
+
+
+
+document.getElementById("ff").style.zIndex=Math.floor(Math.random() *90);
+document.getElementById("gg").style.zIndex=Math.floor(Math.random() *90);
+document.getElementById("hh").style.zIndex=Math.floor(Math.random() *90);
+document.getElementById("ii").style.zIndex=Math.floor(Math.random() *90);
+document.getElementById("jj").style.zIndex=Math.floor(Math.random() *90);
+document.getElementById("kk").style.zIndex=Math.floor(Math.random() *90);
+
+}
+
+
+window.onload = function() {
+setzindex();setbackgroundff();
+};
+</script>
+</head>
+   
+<body>  
+
+ <div id="ff" >
+  </div>
+   <div id="gg" ">
+  </div>
+     <div id="hh" ">
+  </div>
+       <div id="ii" ">
+  </div>
+       <div id="jj" ">
+  </div>
+       <div id="kk" ">
+  </div>
+  <script type="text/javascript" language="javascript" charset="utf-8">
+function getTransformProperty(element) {
+    var properties = ['transform', 'msTransform', 'WebkitTransform', 'MozTransform' , 'OTransform'];
+    var p;
+    while (p = properties.shift()) {
+        if (typeof element.style[p] != 'undefined') {
+            return p;
+        }
+    }
+    
+    return false;
+}
+
+var div = document.getElementById('ff');
+var property = getTransformProperty(div);
+
+if (property) {
+    setInterval(function () {div.style[property] = 'scale(' + 10*Math.random()+ ',' + 10*Math.random()+ ')'+'translate(' + (600*Math.random()-600*Math.random()) + 'px,' + (600*Math.random()-600*Math.random()) + 'px)';}, 10);
+	} else {
+}
+var div2 = document.getElementById('gg');
+var property = getTransformProperty(div2);
+
+if (property) {
+    setInterval(function () {div2.style[property] = 'scale(' + 10*Math.random()+ ',' + 10*Math.random()+ ')'+'translate(' + (400*Math.random()-400*Math.random()) + 'px,' + (400*Math.random()-400*Math.random()) + 'px)';}, 10);
+	} else {
+}
+var div3 = document.getElementById('hh');
+var property = getTransformProperty(div3);
+
+if (property) {
+    setInterval(function () {div3.style[property] = 'scale(' + 10*Math.random()+ ',' + 10*Math.random()+ ')'+'translate(' + (300*Math.random()-300*Math.random()) + 'px,' + (300*Math.random()-300*Math.random()) + 'px)';}, 10);
+	} else {
+}
+var div4 = document.getElementById('ii');
+var property = getTransformProperty(div4);
+
+if (property) {
+    setInterval(function () {div4.style[property] = 'scale(' + 10*Math.random()+ ',' + 10*Math.random()+ ')'+'translate(' + (500*Math.random()-500*Math.random()) + 'px,' + (500*Math.random()-500*Math.random()) + 'px)';}, 10);
+	} else {
+}
+
+var div5 = document.getElementById('jj');
+var property = getTransformProperty(div5);
+
+if (property) {
+    setInterval(function () {div5.style[property] = 'scale(' + 10*Math.random()+ ',' + 10*Math.random()+ ')'+'translate(' + (300*Math.random()-300*Math.random()) + 'px,' + (300*Math.random()-300*Math.random()) + 'px)';}, 10);
+	} else {
+}
+
+var div6 = document.getElementById('kk');
+var property = getTransformProperty(div6);
+
+if (property) {
+    setInterval(function () {div6.style[property] = 'scale(' + 10*Math.random()+ ',' + 10*Math.random()+ ')'+'translate(' + (600*Math.random()-600*Math.random()) + 'px,' + (600*Math.random()-600*Math.random()) + 'px)';}, 10);
+	} else {
+}
+</script>
+
+
+</body>
+<!-- Mirrored from x20xx.com/perception.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Nov 2022 06:23:07 GMT -->
+</html>
